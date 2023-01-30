@@ -1,0 +1,34 @@
+{
+  "name": "@lutria/types",
+  "version": "0.1.0",
+  "description": "Type definitions for Lutria",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf index.d.ts",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "husky install"
+  },
+  "author": "dave@lutria.dev",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.3",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.4"
+  },
+  "type": "module",
+  "types": "index.d.ts",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
