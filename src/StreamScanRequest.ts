@@ -1,13 +1,13 @@
 import DataSecurity from "./common/DataSecurity";
+import LutriaEvent from "./LutriaEvent";
 
-interface StreamScanRequest {
+interface StreamScanRequest extends LutriaEvent {
   streamId: string;
   name: string;
   scanCursor?: string;
   externalId: string;
   externalType?: string;
-  security: DataSecurity; // included for log redaction
-  // TODO: any more fields?
+  security: DataSecurity;
 }
 
 export default StreamScanRequest;

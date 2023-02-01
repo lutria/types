@@ -1,5 +1,6 @@
 import DataSecurity from "./common/DataSecurity";
-interface StreamScanRequest {
+import LutriaEvent from "./LutriaEvent";
+interface StreamScanRequest extends LutriaEvent {
   streamId: string;
   name: string;
   scanCursor?: string;
