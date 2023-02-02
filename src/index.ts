@@ -1,4 +1,4 @@
-import LutriaEvent from "./LutriaEvent";
+import { EventType, LutriaEvent } from "./LutriaEvent";
 import StreamScanRequest from "./StreamScanRequest";
 
-export { LutriaEvent, StreamScanRequest };
+export { EventType, LutriaEvent, StreamScanRequest };

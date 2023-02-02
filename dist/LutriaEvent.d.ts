@@ -1,8 +1,8 @@
 declare enum EventType {
-  StreamScanRequest = "Stream_Scan_Request",
+  StreamScanRequest = "StreamScanRequest",
 }
 interface LutriaEvent {
   eventId: string;
   type: EventType;
 }
-export default LutriaEvent;
+export { EventType, LutriaEvent };
